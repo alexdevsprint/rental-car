@@ -24,7 +24,12 @@
   margin-bottom: 40px;
 }
 
-.viewCatalogBtn {
+.viewCatalogLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
   background-color: #3470ff;
   color: #fff;
   text-align: center;
@@ -38,6 +43,6 @@
   outline: none;
 }
 
-.viewCatalogBtn:hover {
+.viewCatalogLink:hover {
   background-color: #0b44cd;
 }
