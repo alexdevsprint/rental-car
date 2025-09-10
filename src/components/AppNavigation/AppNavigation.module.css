@@ -1,0 +1,14 @@
+.nav {
+    display: flex;
+    gap: 32px;
+}
+
+.navLink {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.active {
+    color: #0B44CD;
+}

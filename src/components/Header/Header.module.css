@@ -1,4 +1,15 @@
+.wrapper {  
+    display: flex;
+   
+    justify-content: space-between;
+}
 .header {
     background-color: #F2F4F7;
-    padding: 24px 0;
+    padding: 24px 0;   
+
+}
+
+.logo {
+    width: 101px;
+    height: 16px;
 }
