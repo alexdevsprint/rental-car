@@ -1,7 +1,8 @@
+import Hero from "../../components/Hero/Hero"
 export default function HomePage() {
-    return (
-        <>
-       <h1>Home</h1>
-        </>
-    );
+  return (
+    <div className={`container`}>   
+      <Hero />
+    </div>
+  );
 }

@@ -1,0 +1,43 @@
+.hero {
+  background-image: url("/images/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 440px;
+  height: 700px;
+  color: #fff;
+  text-align: center;
+}
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.desc {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  margin-bottom: 40px;
+}
+
+.viewCatalogBtn {
+  background-color: #3470ff;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  width: 276px;
+  height: 44px;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+}
+
+.viewCatalogBtn:hover {
+  background-color: #0b44cd;
+}
