@@ -1,0 +1,18 @@
+.loadMoreBtn {
+    
+
+  width: 156px;
+  height: 44px; 
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid #3470ff; 
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.loadMoreBtn:hover {
+    border: 1px solid #0B44CD;
+}

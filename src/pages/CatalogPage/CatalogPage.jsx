@@ -1,4 +1,6 @@
 import Loader from "../../components/Loader/Loader";
+import LoadMoreBtn from "../../components/LoadMoreBtn/LoadMoreBtn"
+
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -17,6 +19,7 @@ export default function CatalogPage() {
     <div className={`container`}>
       <h1>Catalog</h1>
       <Loader />
+      <LoadMoreBtn/>
     </div>
   );
 }
