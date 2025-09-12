@@ -1,21 +1,9 @@
-import css from "./LoadMoreBtn.module.css"
-import { useDispatch, useSelector } from "react-redux";
+import css from "./LoadMoreBtn.module.css";
 
-import { setCurrentPage } from "../../redux/cars/slice"
-import { selectCurrentPage } from "../../redux/cars/selectors";
-
-
-export default function LoadMoreBtn() {
-  const dispatch = useDispatch();
-  const currentPage = useSelector(selectCurrentPage);
-
-  const handleLoadMoreClick = () => {
-    dispatch(setCurrentPage(currentPage + 1));
-  };
-
+export default function LoadMoreBtn({ onClick }) {
   return (
-    <button className={css.loadMoreBtn} type="button" onClick={handleLoadMoreClick} >
-        Load more
+    <button className={css.loadMoreBtn} onClick={onClick}>
+      Load More
     </button>
   );
 }
