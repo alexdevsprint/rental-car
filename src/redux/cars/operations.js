@@ -13,3 +13,15 @@ export const fetchCars = createAsyncThunk(
     }
   }
 );
+
+export const fetchCarById = createAsyncThunk(
+  "cars/fetchCarById",
+  async (id, thunkAPI) => {
+    try {
+      const res = await axiosAPI.get(`/cars/${id}`);
+      return res.data;
+    } catch {
+      return thunkAPI.rejectWithValue(true);
+    }
+  }
+);

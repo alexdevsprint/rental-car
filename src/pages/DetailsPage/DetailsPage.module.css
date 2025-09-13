@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  padding-top: 84px;
+  gap: 72px;
+}
+
+.descWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 110px;
+}
+
+.img {
+  width: 640px;
+  height: 512px;
+  border-radius: 12px;
+}
+
+.title {
+  margin-bottom: 8px;
+}
+
+.adress {
+  margin-bottom: 16px;
+
+}
+.price {
+  margin-bottom: 32px;
+
+}
+.desc {
+  margin-bottom: 68px;
+}

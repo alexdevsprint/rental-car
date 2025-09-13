@@ -1,7 +1,9 @@
 import css from "./CarCard.module.css";
+import { Link } from "react-router-dom";
 
 export default function CarCard({ car }) {
   const {
+    id,
     year,
     brand,
     model,
@@ -12,8 +14,8 @@ export default function CarCard({ car }) {
     address,
     mileage,
   } = car;
-  
-  const addressParts = address.split(',').map(part => part.trim());
+
+  const addressParts = address.split(",").map((part) => part.trim());
   const city = addressParts[addressParts.length - 2];
   const country = addressParts[addressParts.length - 1];
 
@@ -32,11 +34,9 @@ export default function CarCard({ car }) {
         <li>{rentalCompany}</li>
         <li>{type}</li>
         <li>{mileage} km</li>
-      </ul>    
+      </ul>
 
-      <button className={css.btn} type="button">
-        Read more
-      </button>
+      <Link to={`/catalog/${id}`} className={css.btn}>Read more</Link>
     </div>
   );
 }

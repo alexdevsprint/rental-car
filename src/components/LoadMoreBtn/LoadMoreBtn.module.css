@@ -1,5 +1,8 @@
 .loadMoreBtn {
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;    
+  margin: 0 auto;
 
   width: 156px;
   height: 44px; 
@@ -10,7 +13,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
-  text-align: center;
+
 }
 
 .loadMoreBtn:hover {

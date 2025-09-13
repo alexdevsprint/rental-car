@@ -23,6 +23,10 @@
 }
 
 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
   color: #fff;
   background-color: #3470ff;
   width: 276px;
