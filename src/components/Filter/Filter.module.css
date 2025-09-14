@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 56px;
+}
+
+.inputContainer {
+  display: flex;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #3470ff;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+
+  width: 156px;
+  height: 44px;
+  border: none;
+  border-radius: 12px;
+}
+
+.from {
+  border: none;
+  border-right: 1px solid #dadde1;
+  border-radius: 12px 0 0 12px;
+  width: 160px;
+  height: 44px;
+  background-color: #F7F7F7;
+}
+
+.to {
+  border: none;
+  border-radius: 0 12px 12px 0;
+  width: 160px;
+  height: 44px;
+  background-color: #F7F7F7;
+}
+
+.btn:hover {
+  background-color: #0b44cd;
+}

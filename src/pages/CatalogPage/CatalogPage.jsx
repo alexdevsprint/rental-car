@@ -11,11 +11,19 @@ import {
   selectHasMore,
 } from "../../redux/cars/selectors";
 
+import {
+  selectSelectedBrand,
+  selectSelectedPrice,
+  selectMileageFrom,
+  selectMileageTo,
+} from "../../redux/filters/selectors";
+
 import { setCurrentPage, resetCatalog } from "../../redux/cars/slice";
 
 import CarList from "../../components/CarList/CarList";
 import Loader from "../../components/Loader/Loader";
 import LoadMoreBtn from "../../components/LoadMoreBtn/LoadMoreBtn";
+import Filter from "../../components/Filter/Filter";
 
 export default function CatalogPage() {
   const dispatch = useDispatch();
@@ -24,11 +32,13 @@ export default function CatalogPage() {
   const isLoading = useSelector(selectIsLoading);
   const hasMore = useSelector(selectHasMore);
 
-  
+  const selectedBrand = useSelector(selectSelectedBrand);
+  const selectedPrice = useSelector(selectSelectedPrice);
+  const mileageFrom = useSelector(selectMileageFrom);
+  const mileageTo = useSelector(selectMileageTo);
 
   useEffect(() => {
-    dispatch(resetCatalog());    
-    
+    dispatch(resetCatalog());
   }, [dispatch]);
 
   useEffect(() => {
@@ -38,10 +48,21 @@ export default function CatalogPage() {
   const handleLoadMore = () => {
     const nextPage = currentPage + 1;
     dispatch(setCurrentPage(nextPage));
+
+    dispatch(
+      fetchCars({
+        page: nextPage,
+        brand: selectedBrand?.value,
+        price: selectedPrice?.value,
+        minMileage: mileageFrom,
+        maxMileage: mileageTo,
+      })
+    );
   };
 
   return (
     <div className={`${css.wrapper} container`}>
+      <Filter />
       {cars.length > 0 && <CarList cars={cars} />}
       {isLoading && <Loader />}
       {!isLoading && hasMore && <LoadMoreBtn onClick={handleLoadMore} />}
