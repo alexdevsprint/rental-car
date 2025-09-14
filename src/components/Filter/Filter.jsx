@@ -47,24 +47,32 @@ export default function Filter() {
     label: price.toString(),
   }));
 
-  const selectStyles = {
-    control: (base) => ({
-      ...base,
-      border: "none",
-      outline: "none",
-      boxShadow: "none",
-      backgroundColor: "transparent",
-    }),
-    menu: (base) => ({
-      ...base,
-      backgroundColor: "#fff",
-    }),
-    option: (base, state) => ({
-      ...base,
-      backgroundColor: state.isFocused ? "#eee" : "#fff",
-      color: "#000",
-    }),
-  };
+const selectStyles = {
+  control: (base) => ({
+    ...base,
+    border: "none",
+    borderRadius: "12px",
+    width: "204px",
+    height: "44px",
+    backgroundColor: "#f7f7f7",
+    boxShadow: "none",
+    outline: "none",
+    cursor: "pointer",
+    paddingLeft: "16px",
+    paddingRight: "5px",
+  }),
+  menu: (base) => ({
+    ...base,
+    backgroundColor: "#fff",
+    zIndex: 10, // чтобы меню не пряталось за другими элементами
+  }),
+  option: (base, state) => ({
+    ...base,
+    backgroundColor: state.isFocused ? "#eee" : "#fff",
+    color: "#000",
+    cursor: "pointer",
+  }),
+};
 
   const handleSearch = () => {
     dispatch(resetCatalog());

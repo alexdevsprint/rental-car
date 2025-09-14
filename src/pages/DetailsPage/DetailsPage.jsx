@@ -58,44 +58,44 @@ export default function DetailsPage() {
         <img className={css.img} src={img} alt={`${brand} ${model}`} />
         <BookForm />
       </div>
-      <div>
+      <div className={css.allDescWrapper}>
         <h1 className={css.title}>
           {brand} {model}, {year}
         </h1>
         <p className={css.adress}>
           {city}, {country} Mileage: {mileage} km
         </p>
-        <p className={css.price}>{rentalPrice} </p>
+        <p className={css.price}>${rentalPrice} </p>
         <p className={css.desc}>{description}</p>
 
         <div className={css.descWrapper}>
           <div>
-            <h3>Rental Conditions:</h3>
-            <ul>
+            <h3 className={css.titleList}>Rental Conditions:</h3>
+            <ul className={css.list}>
               {rentalConditions?.map((item, index) => (
-                <li key={index}>{item}</li>
+                <li key={index}> - {item}</li>
               ))}
             </ul>
           </div>
 
           <div>
-            <h3>Car Specifications:</h3>
-            <ul>
-              <li>Year: {year}</li>
-              <li>Type: {type}</li>
-              <li>Fuel Consumption: {fuelConsumption}</li>
-              <li>Engine Size: {engineSize}</li>
+            <h3 className={css.titleList}>Car Specifications:</h3>
+            <ul className={css.list}>
+              <li> - Year: {year}</li>
+              <li> - Type: {type}</li>
+              <li> - Fuel Consumption: {fuelConsumption}</li>
+              <li> - Engine Size: {engineSize}</li>
             </ul>
           </div>
 
           <div>
-            <h3>Accessories and functionalities:</h3>
-            <ul>
+            <h3 className={css.titleList}>Accessories and functionalities:</h3>
+            <ul className={css.list}>
               {accessories?.map((item, index) => (
-                <li key={index}>{item}</li>
+                <li key={index}> - {item}</li>
               ))}
               {functionalities?.map((item, index) => (
-                <li key={index}>{item}</li>
+                <li key={index}> - {item}</li>
               ))}
             </ul>
           </div>

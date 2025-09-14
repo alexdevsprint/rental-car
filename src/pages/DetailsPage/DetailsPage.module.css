@@ -1,9 +1,12 @@
 .wrapper {
   display: flex;
   padding-top: 84px;
+  padding-bottom: 84px;
   gap: 72px;
 }
-
+.allDescWrapper {
+  padding-top: 25px;
+}
 .descWrapper {
   display: flex;
   flex-direction: column;
@@ -14,20 +17,48 @@
   width: 640px;
   height: 512px;
   border-radius: 12px;
+  margin-bottom: 40px;
 }
 
 .title {
   margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
 }
 
 .adress {
   margin-bottom: 16px;
-
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
 }
 .price {
   margin-bottom: 32px;
-
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  color: #3470ff;
 }
 .desc {
   margin-bottom: 68px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.titleList {
+  margin-bottom: 20px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.list li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
 }

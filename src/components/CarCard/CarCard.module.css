@@ -20,13 +20,33 @@
   font-size: 12px;
   line-height: 1.33;
   color: #8d929a;
+  display: flex;
+  flex-wrap: wrap; 
+  max-width: 240px;
+   row-gap: 4px;
+   margin-bottom: 32px;
+  
 }
+
+
+
+
+.list li:nth-child(1):after,
+.list li:nth-child(2):after,
+.list li:nth-child(3):after,
+.list li:nth-child(4):after {
+  content: "|";
+  margin: 4px;
+  color: #dadde1;
+}
+
+
 
 .btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   color: #fff;
   background-color: #3470ff;
   width: 276px;

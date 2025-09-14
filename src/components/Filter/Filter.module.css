@@ -31,7 +31,13 @@
   border-radius: 12px 0 0 12px;
   width: 160px;
   height: 44px;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+
+  padding: 12px 24px;
 }
 
 .to {
@@ -39,7 +45,13 @@
   border-radius: 0 12px 12px 0;
   width: 160px;
   height: 44px;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  
+  padding: 12px 24px;
 }
 
 .btn:hover {
