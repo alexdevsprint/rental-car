@@ -33,7 +33,9 @@ export default function CarCard({ car }) {
         <li>{country}</li>
         <li>{rentalCompany}</li>
         <li>{type}</li>
-        <li>{mileage} km</li>
+        <li>
+          {`${mileage}`.slice(0, 1) + " " + `${mileage}`.slice(1)} km
+        </li>
       </ul>
 
       <Link to={`/catalog/${id}`} className={css.btn}>Read more</Link>

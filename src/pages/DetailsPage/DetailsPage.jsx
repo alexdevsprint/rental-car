@@ -63,7 +63,7 @@ export default function DetailsPage() {
           {brand} {model}, {year}
         </h1>
         <p className={css.adress}>
-          {city}, {country} Mileage: {mileage} km
+          {city}, {country} Mileage: {`${mileage}`.slice(0, 1) + " " + `${mileage}`.slice(1)} km
         </p>
         <p className={css.price}>${rentalPrice} </p>
         <p className={css.desc}>{description}</p>
