@@ -1,12 +1,34 @@
-# React + Vite
+# 🚗 Rental Car
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Car Rental Catalog is a web application with filters and pagination that allows users to browse, search, and view detailed information about available cars.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📋 Description
 
-## Expanding the ESLint configuration
+This project provides a user-friendly interface to explore a catalog of rental cars. Users can filter cars by **brand**, **price**, and **mileage range** and view detailed info. The application uses **React**, **Redux Toolkit**, and **Axios** for API communication.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- Car list with pagination ("Load More" button)
+- Server-side filtering:
+  - by brand (single selection)
+  - by price (single selection)
+  - by mileage (from/to)
+- Detailed view for each car
+- Global state management via Redux
+
+---
+
+🛠️ Technologies Used
+
+- React
+- Redux Toolkit
+- React Router
+- Axios
+- React Select
+- React Spinners
+- CSS Modules
+
