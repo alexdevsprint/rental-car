@@ -6,7 +6,7 @@ export default function Header() {
     <header className={css.header}>
       <div className={`${css.wrapper} container`}>
         <Link to="/">
-          <img className={css.logo} src="/images/logo.png" alt="logo" />
+          <img className={css.logo} src="/images/logo.svg" alt="logo" />
         </Link>
         <AppNavigation />
       </div>
