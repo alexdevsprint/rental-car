@@ -1,3 +1,6 @@
+.card {
+  max-width: 276px;
+}
 .img {
   width: 276px;
   border-radius: 10px;
@@ -15,32 +18,35 @@
   color: #3470ff;
 }
 
-.list {
+.listCity,
+.listType {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
   color: #8d929a;
   display: flex;
-  flex-wrap: wrap; 
-  max-width: 240px;
-   row-gap: 4px;
-   margin-bottom: 32px;
-  
+  flex-wrap: wrap;
+  row-gap: 4px;
+}
+.listCity {
+  margin-bottom: 4px;
+}
+.listType {
+  margin-bottom: 32px;
 }
 
-
-
-
-.list li:nth-child(1):after,
-.list li:nth-child(2):after,
-.list li:nth-child(3):after,
-.list li:nth-child(4):after {
+.listCity li:nth-child(1):after,
+.listCity li:nth-child(2):after {
   content: "|";
   margin: 4px;
   color: #dadde1;
 }
 
-
+.listType li:nth-child(1):after {
+  content: "|";
+  margin: 4px;
+  color: #dadde1;
+}
 
 .btn {
   display: flex;

@@ -28,10 +28,12 @@ export default function CarCard({ car }) {
         </span>
         <span>{rentalPrice}$</span>
       </h3>
-      <ul className={css.list}>
+      <ul className={css.listCity}>
         <li>{city} </li>
         <li>{country}</li>
         <li>{rentalCompany}</li>
+      </ul>
+      <ul className={css.listType}>
         <li>{type}</li>
         <li>
           {`${mileage}`.slice(0, 1) + " " + `${mileage}`.slice(1)} km
