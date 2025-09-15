@@ -63,7 +63,13 @@ export default function DetailsPage() {
           {brand} {model}, {year}
         </h1>
         <p className={css.adress}>
-          {city}, {country} Mileage: {`${mileage}`.slice(0, 1) + " " + `${mileage}`.slice(1)} km
+          <svg className={css.icon} width="16" height="16">
+            <use href="/images/sprite.svg#icon-location"></use>
+          </svg>
+          <span>
+          {city}, {country} Mileage:{" "}
+          {`${mileage}`.slice(0, 1) + " " + `${mileage}`.slice(1)} km
+          </span>
         </p>
         <p className={css.price}>${rentalPrice} </p>
         <p className={css.desc}>{description}</p>
@@ -73,7 +79,12 @@ export default function DetailsPage() {
             <h3 className={css.titleList}>Rental Conditions:</h3>
             <ul className={css.list}>
               {rentalConditions?.map((item, index) => (
-                <li key={index}> - {item}</li>
+                <li key={index}>
+                  <svg className={css.icon} width="16" height="16">
+                    <use href="/images/sprite.svg#icon-check-circle"></use>
+                  </svg>
+                  <span>{item}</span>
+                </li>
               ))}
             </ul>
           </div>
@@ -81,10 +92,30 @@ export default function DetailsPage() {
           <div>
             <h3 className={css.titleList}>Car Specifications:</h3>
             <ul className={css.list}>
-              <li> - Year: {year}</li>
-              <li> - Type: {type}</li>
-              <li> - Fuel Consumption: {fuelConsumption}</li>
-              <li> - Engine Size: {engineSize}</li>
+              <li>
+                <svg className={css.icon} width="16" height="16">
+                  <use href="/images/sprite.svg#icon-calendar"></use>
+                </svg>
+                <span>Year: {year}</span>
+              </li>
+              <li>
+                <svg className={css.icon} width="16" height="16">
+                  <use href="/images/sprite.svg#icon-car"></use>
+                </svg>
+                <span>Type: {type}</span>
+              </li>
+              <li>
+                <svg className={css.icon} width="16" height="16">
+                  <use href="/images/sprite.svg#icon-fuel-pump"></use>
+                </svg>
+                <span>Fuel Consumption: {fuelConsumption}</span>
+              </li>
+              <li>
+                <svg className={css.icon} width="16" height="16">
+                  <use href="/images/sprite.svg#icon-gear"></use>
+                </svg>
+                <span>Engine Size: {engineSize}</span>
+              </li>
             </ul>
           </div>
 
@@ -92,10 +123,20 @@ export default function DetailsPage() {
             <h3 className={css.titleList}>Accessories and functionalities:</h3>
             <ul className={css.list}>
               {accessories?.map((item, index) => (
-                <li key={index}> - {item}</li>
+                <li key={index}>
+                  <svg className={css.icon} width="16" height="16">
+                    <use href="/images/sprite.svg#icon-check-circle"></use>
+                  </svg>
+                  <span> {item}</span>
+                </li>
               ))}
               {functionalities?.map((item, index) => (
-                <li key={index}> - {item}</li>
+                <li key={index}>
+                  <svg className={css.icon} width="16" height="16">
+                    <use href="/images/sprite.svg#icon-check-circle"></use>
+                  </svg>
+                  <span>{item}</span>
+                </li>
               ))}
             </ul>
           </div>

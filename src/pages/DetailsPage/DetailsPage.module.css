@@ -28,6 +28,9 @@
 }
 
 .adress {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -58,7 +61,10 @@
 }
 
 .list li {
+  display: flex;
+  gap: 8px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
+  align-items: center;
 }
