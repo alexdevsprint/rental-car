@@ -1,5 +1,3 @@
-import "./App.css";
-
 import Layout from "./components/Layout/Layout";
 
 import { Routes, Route } from "react-router-dom";
